@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3ed2e8cef0.js" crossorigin="anonymous"></script>
+  <title>Product List With Cart</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="container__wrapper">
+      <h1>Desserts</h1>
+    <div class="products-grid-container">
+    </div>
+    </div>
+    <div class="cart">
+      <p class="cart-info">Your Cart (<span id="cartLength">0</span>)</p>
+      <div class="empty-cart__wrapper">
+        <img src="assets/images/empty-cart--mobile.svg">
+        <p class="empty-cart-txt">Your added items will appear here</p>
+      </div>
+      <div class="orders">
+        <div class="orders-list">
+        </div>
+        <div class="total-price">
+          <p></p>
+          <p id="totalPriceTxt"></p>
+        </div>
+        <div class="carbon-neutral-info">
+          <img src="assets/images/carbon_tree.svg">
+          <p>This is a <span>carbon-neutral</span> delivery</p>
+        </div>
+        <button id="confirmOrderBtn">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+  <dialog id="confirmOrderDialog">
+  </dialog>
+</body>
+</html>
